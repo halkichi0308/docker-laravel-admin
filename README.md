@@ -8,3 +8,6 @@ docker-compose up
 ```
 
 and than access to http://localhost:8000/admin
+
+## Notes
+init.sh was using when laravel-admin installed after docker images build.
