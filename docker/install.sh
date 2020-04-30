@@ -58,7 +58,7 @@ EOF
 composer require encore/laravel-admin
 php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
 php artisan admin:install
-php artisan admin:make UserController --model=App\\User
-chown www-data:www-data -R ./*
+#php artisan admin:make UserController --model=App\\User
+#chown www-data:www-data -R ./*
 php artisan key:generate
 php artisan serve --host 0.0.0.0

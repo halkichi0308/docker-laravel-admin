@@ -21,8 +21,10 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 ENV PATH $PATH:/composer/vendor/bin
 
-WORKDIR /var/www/html/app
+WORKDIR /var/www/html
+ADD install.sh /var/www/html
+RUN chmod 755 /var/www/html/install.sh
 
-CMD ["php", "artisan", "serve", "--host", "0.0.0.0"]
+#CMD ["php", "artisan", "serve", "--host", "0.0.0.0"]
 
 
